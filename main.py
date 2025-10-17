@@ -21,8 +21,11 @@ def down_sampling(img, first_pixel, last_pixel):
 
 
 def image_grid(img, sample_size):
+    img_grid = []
     size_x, size_y = img.size
-    
+    for x in range(0, size_x, sample_size):
+        img_grid.append((x, 0))
+        for y in range(0, size_y, sample_size):
 
 
 
