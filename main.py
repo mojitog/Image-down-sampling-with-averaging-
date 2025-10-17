@@ -20,7 +20,14 @@ def down_sampling(img, first_pixel, last_pixel):
     return avg_rgb[0], avg_rgb[1], avg_rgb[2]
 
 
+def image_grid(img, sample_size):
+    size_x, size_y = img.size
+    
+
+
+
 sample_size = 10
 img = Image.open("Heath_Ledger_as_the_Joker.JPG.webp")
+
 
 print(down_sampling(img, (0,0), (10,10)))
